@@ -3,6 +3,118 @@
 @import 'reset';
 @import 'global';
 
+.header-top{
+  max-width: 1770px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header{
+  padding: 46px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__list-item + .menu__list-item{
+    padding-left: 35px;
+  }
+  &__list-link{
+    color: $default;
+    @extend %rubik-500;
+    line-height: 12px;
+  }
+}
+
+.user-nav{
+  display: flex;
+  justify-content: flex-end;
+  &__search-link{
+    @extend %navlink;
+    line-height: 60px;
+    &:hover{
+      background-color: $accent2;
+      path{
+        fill: #fff;
+      }
+    }
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $accent2;
+    border-radius: 25px;
+    margin-left: 18px;
+  }
+  &__item{
+    padding-top: 10px;
+  }
+  &__item + .user-nav__item{
+    padding-left: 50px;
+  }
+  &__heart-link{
+    position: relative;
+    @extend %navlink;
+    padding-left: 42px;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 32px;
+      background-color: #fde7d3;
+      right: -50%;
+    }
+    &:hover{
+      path{
+        fill: #fff;
+      }
+      .user-nav__heart-num{
+        transform: scale(1.5);
+        color: #fcd7b6;
+      }
+    }
+  }
+  &__cart-link{
+    position: relative;
+    @extend %navlink;
+    padding-right: 42px;
+    &:hover{
+      path{
+        fill: #fff;
+      }
+      .user-nav__cart-num{
+        transform: scale(1.5);
+        color: #fcd7b6;
+      }
+    }
+  }
+  &__heart-num{
+    @extend %navnum;
+    right: -10px;
+  }
+  &__cart-num{
+    @extend %navnum;
+    right: 34px;
+  }
+  &__contacts-link{
+    @extend %navlink;
+    background-color: $accent;
+    line-height: 60px;
+    margin-left: 18px;
+    &:hover{
+      background-color: $accent2;
+    }
+  }  
+}
+
+
+
 
 
 @import 'media';
