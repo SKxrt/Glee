@@ -20,3 +20,10 @@ body{
   margin: 0 auto;
   padding: 0 15px;
 }
+
+a{
+  color: #7b7b7b;
+  font-size: 14px;
+  line-height: 24px;
+  @extend %rubik-400;
+}
