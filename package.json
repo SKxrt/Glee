@@ -9,6 +9,7 @@
   "author": "John",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^4.1.1",
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
@@ -18,7 +19,9 @@
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0",
-    "sass": "^1.43.4"
+    "sass": "^1.43.4",
+    "slick-animation": "^0.3.3",
+    "slick-carousel": "^1.8.1"
   },
   "dependencies": {
     "uninstall": "^0.0.0"
