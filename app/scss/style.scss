@@ -479,4 +479,20 @@
 
 
 
+
+
+
+.video{
+  &__popup{
+    padding: 186px 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
 @import 'media';
