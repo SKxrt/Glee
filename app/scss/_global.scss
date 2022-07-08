@@ -26,4 +26,5 @@ a{
   font-size: 14px;
   line-height: 24px;
   @extend %rubik-400;
+  transition: all .3s linear 0s;
 }

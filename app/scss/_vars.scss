@@ -54,3 +54,20 @@ $accent2: #fcd7b6;
   @extend %dmsans-400;
   transition: all .3s linear 0s;
 }
+
+%category-btn {
+  border: none;
+  background-color: #fff;
+  @extend %dmsans-700;
+  color: #8b8b8b;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0;
+  cursor: pointer;
+  transition: all .3s linear 0s;
+  text-transform: capitalize;
+
+  &:hover {
+    color: #191919;
+  }
+}

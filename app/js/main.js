@@ -6,4 +6,7 @@ $(function () {
     autoplay: true,
     atoplaySpeed: 1000
   });
+
+  var mixer = mixitup('.category-week__content');
+
 });
