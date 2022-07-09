@@ -8,5 +8,6 @@ $(function () {
   });
 
   var mixer = mixitup('.category-week__content');
+  var mixer = mixitup('.category-new__content');
 
 });
