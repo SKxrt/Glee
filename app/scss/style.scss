@@ -756,4 +756,127 @@
 }
 
 
+.partners--login {
+  position: initial;
+  padding: 75px 0;
+  margin-top: 110px;
+  &__list {
+    margin: 0;
+  }
+}
+.top {
+  background-color: #edf1f4;
+  text-align: center;
+  padding: 25px 0 20px;
+  &__title {
+    @extend %rubik-300;
+    font-size: 36px;
+    text-transform: capitalize;
+  }
+}
+.breadcrumbs {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    text-transform: capitalize;
+    color: #7b7b7b;
+    &::after {
+      content: '/';
+      margin-left: 10px;
+      margin-right: 10px;
+      color: #7b7b7b;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    &:last-child {
+      padding-right: 0;
+      color: $accent2;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &__link {
+    color: inherit;
+    &:hover {
+      color: $accent2;
+    }
+  }
+}
+
+.modal {
+  padding-top: 115px;
+  max-width: 470px;
+  margin: 0 auto 120px;
+  @extend %rubik-400;
+  font-size: 14px;
+  color: #436372;
+  &__label {
+    display: block;
+    margin-bottom: 20px;
+    &:nth-child(2) {
+      margin-bottom: 35px;
+    }
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    border-width: 2px;
+    border-color: rgb(246, 246, 246);
+    border-style: solid;
+    height: 60px;
+    padding: 0 15px;
+  }
+  &__btn {
+    @extend %rubik-500;
+    font-size: 18px;
+    color: #fff;
+    background-color: $accent;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: all .3s linear 0s;
+    margin-bottom: 20px;
+    &:hover {
+      background-color: $accent2;
+    }
+  }
+  &__checkbox-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 2px solid #f6f6f6;
+    margin-bottom: 20px;
+  }
+  &__checkbox {
+    display: inline;
+    cursor: pointer;
+  }
+  &__error {
+    @extend %rubik-400;
+    font-size: 14px;
+    color: #436372;
+    &:hover {
+      color: $accent2;
+    }
+  }
+  &__text {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__btn-create {
+    background-color: #fff;
+    color: #243f4d;
+    border: 2px solid $accent;
+    &:hover {
+      color: #fff;
+      background-color: $accent;
+    }
+  }
+}
+
+
 @import 'media';
